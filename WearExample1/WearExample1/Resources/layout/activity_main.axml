@@ -11,7 +11,7 @@
 			android:layout_height="wrap_content"
 			android:text="@string/hello_world"
 			android:layout_gravity="center_horizontal"
-			android:layout_marginTop="67.1dp" />
+			android:layout_marginTop="33.8dp" />
 		<Button
 			android:text="Los geht's"
 			android:layout_width="match_parent"
@@ -19,7 +19,7 @@
 			android:id="@+id/btnLosGehts"
 			android:layout_marginRight="19.3dp"
 			android:layout_marginLeft="20.0dp"
-			android:layout_marginBottom="34.7dp"
+			android:layout_marginBottom="11.3dp"
 			android:layout_marginTop="0.7dp"
 			android:textSize="10dp"
 			android:layout_gravity="bottom" />
