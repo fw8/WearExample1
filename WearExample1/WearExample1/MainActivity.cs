@@ -18,7 +18,6 @@ namespace WearExample1
     [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class MainActivity : WearableActivity
     {
-        TextView textView;
         Button losGehts;
         TextView frage;
 
@@ -29,43 +28,41 @@ namespace WearExample1
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            textView = FindViewById<TextView>(Resource.Id.text);
             losGehts = FindViewById<Button>(Resource.Id.btnLosGehts);
 
 
-            losGehts.Click += delegate {
+            losGehts.Click += delegate
+            {
                 SetContentView(Resource.Layout.janein);
                 frage = FindViewById<TextView>(Resource.Id.frageTxt);
-                frage.Text = book.GetCurrentPage().Text;
-                FindViewById<Button>(Resource.Id.jaBtn).Click += Ja_Click;
-                FindViewById<Button>(Resource.Id.neinBtn).Click += Nein_Click;
-
+                frage.Text = book.GetCurrentPage().text;
+                FindViewById<Button>(Resource.Id.jaBtn).Click += JaClick;
+                FindViewById<Button>(Resource.Id.neinBtn).Click += NeinClick;
             };
 
             //SetAmbientEnabled();
         }
 
 
-        void Ja_Click(object sender, EventArgs e)
+        void JaClick(object sender, EventArgs e)
         {
             // Handle Ja
             SetContentView(Resource.Layout.janein);
             frage = FindViewById<TextView>(Resource.Id.frageTxt);
-            frage.Text = book.GetNextPage(YesNoEnum.Yes).Text;
-            FindViewById<Button>(Resource.Id.jaBtn).Click += Ja_Click;
-            FindViewById<Button>(Resource.Id.neinBtn).Click += Nein_Click;
+            frage.Text = book.GetNextPage(YesNoEnum.Yes).text;
+            FindViewById<Button>(Resource.Id.jaBtn).Click += JaClick;
+            FindViewById<Button>(Resource.Id.neinBtn).Click += NeinClick;
         }
 
 
-        void Nein_Click(object sender, EventArgs e)
+        void NeinClick(object sender, EventArgs e)
         {
             // Handle nein
             SetContentView(Resource.Layout.janein);
             frage = FindViewById<TextView>(Resource.Id.frageTxt);
-            frage.Text = book.GetNextPage(YesNoEnum.No).Text;
-            FindViewById<Button>(Resource.Id.jaBtn).Click += Ja_Click;
-            FindViewById<Button>(Resource.Id.neinBtn).Click += Nein_Click;
-
+            frage.Text = book.GetNextPage(YesNoEnum.No).text;
+            FindViewById<Button>(Resource.Id.jaBtn).Click += JaClick;
+            FindViewById<Button>(Resource.Id.neinBtn).Click += NeinClick;
         }
     }
 }
