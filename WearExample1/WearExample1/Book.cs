@@ -6,8 +6,8 @@ namespace WearExample1
 
     public class Book
     {
-        private int currentPage { get; set; }
-        private List<Page> pages { get; set; }
+        private int currentPage;
+        private List<Page> pages;
 
         public Book()
         {
