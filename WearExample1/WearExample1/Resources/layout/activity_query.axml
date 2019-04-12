@@ -14,15 +14,15 @@
         app:boxedEdges="all">
 
         <TextView
+            android:id="@+id/queryText"
             android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/frageTxt"
-            android:text="dsg dgdfgd dgdfdf dfgdg dgdg dgdg dgdg dgdfg dgdgdfg dg dfgdfg dgf"
+            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor "
             android:textColor="@color/light_grey" />
 
 		<Button
-			android:id="@+id/jaBtn"
+			android:id="@+id/queryYesButton"
 			android:text="Ja"
 			android:background="@color/green"
 			android:layout_gravity="bottom|left"
@@ -30,7 +30,7 @@
 			android:layout_width="50dp"/>
 
         <Button
-            android:id="@+id/neinBtn"
+            android:id="@+id/queryNoButton"
             android:text="Nein"
             android:background="@color/red"
             android:layout_gravity="bottom|right"

@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\strings.xml" />
-    <AndroidResource Include="Resources\layout\janein.axml" />
+    <AndroidResource Include="Resources\layout\activity_query.axml" />
     <AndroidResource Include="Resources\layout\activity_main.axml" />
   </ItemGroup>
   <ItemGroup>

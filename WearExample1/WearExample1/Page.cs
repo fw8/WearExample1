@@ -1,6 +1,6 @@
 ﻿namespace WearExample1
 {
-    public enum PageTypeEnum { Frage, Anweisung }
+    public enum PageTypeEnum { Query, Answer }
 
     public class Page
     {

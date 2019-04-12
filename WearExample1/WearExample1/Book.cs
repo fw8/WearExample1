@@ -6,35 +6,39 @@ namespace WearExample1
 
     public class Book
     {
-        public int currentPage { get; set; }
+        private int currentPage { get; set; }
         private List<Page> pages { get; set; }
 
         public Book()
         {
-            // create list
+            // Buch (Liste von Blaettern) erzeugen
             pages = new List<Page>();
 
-            //0
-            pages.Add(new Page() { pageType = PageTypeEnum.Frage, text = "Hat es geschmeckt?", nextIfNo = 2, nextIfYes = 1 });
+            // Seite 0 / geschmeckt?
+            pages.Add(new Page() { pageType = PageTypeEnum.Query, text = "Hat es geschmeckt?", nextIfNo = 2, nextIfYes = 1 });
 
-            //1 geschmeckt / ja - mehr?
-            pages.Add(new Page() { pageType = PageTypeEnum.Frage, text = "OK, möchtest Du mehr?", nextIfNo = 2, nextIfYes = 0 });
+            // Seite 1 / geschmeckt / ja / mehr?
+            pages.Add(new Page() { pageType = PageTypeEnum.Query, text = "OK, möchtest Du mehr?", nextIfNo = 2, nextIfYes = 0 });
 
-            //2 geschmeckt / nein - nachtisch?
-            pages.Add(new Page() { pageType = PageTypeEnum.Frage, text = "Schade, trotzdem noch Nachtisch?", nextIfNo = 4, nextIfYes = 3 });
+            // Seite 2 / geschmeckt / nein / nachtisch?
+            pages.Add(new Page() { pageType = PageTypeEnum.Query, text = "Schade, trotzdem noch Nachtisch?", nextIfNo = 4, nextIfYes = 3 });
 
-            //3 nachtisch ja?
-            pages.Add(new Page() { pageType = PageTypeEnum.Anweisung, text = "Alles klar, guten Appetit!", nextIfNo = 0, nextIfYes = 0 });
+            // Seite 3 / nachtisch / ja
+            pages.Add(new Page() { pageType = PageTypeEnum.Answer, text = "Alles klar, guten Appetit!", nextIfNo = 0, nextIfYes = 0 });
 
-            //4 nachtisch2?
-            pages.Add(new Page() { pageType = PageTypeEnum.Anweisung, text = "Schade!", nextIfNo = 0, nextIfYes = 0 });
+            // Seite 4 / nachtisch / nein
+            pages.Add(new Page() { pageType = PageTypeEnum.Answer, text = "Schade!", nextIfNo = 0, nextIfYes = 0 });
+
+            Reset(); // Buch auf Anfang setzten
         }
 
+        // Aktuelle Seite liefern
         public Page GetCurrentPage()
         {
             return pages[currentPage];
         }
 
+        // Zur naechsten Seite blaettern gemaess Kontext (Ja/Nein)
         public Page GetNextPage(YesNoEnum answer)
         {
             int nextPage = pages[currentPage].nextIfNo;
@@ -45,8 +49,14 @@ namespace WearExample1
             }
 
             Page np = pages[nextPage];
-            currentPage = nextPage; // save state
+            currentPage = nextPage; // Seite merken
             return (np);
+        }
+
+        // Buch auf Anfang zurueck setzen
+        public void Reset()
+        {
+            currentPage = 0;
         }
 
     }

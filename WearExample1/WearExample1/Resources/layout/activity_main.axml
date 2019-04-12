@@ -14,7 +14,7 @@
         app:boxedEdges="all">
 
         <TextView
-            android:id="@+id/antwortTxt"
+            android:id="@+id/mainText"
             android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:textColor="@color/light_grey" />
 
         <Button
-            android:id="@+id/btnLosGehts"
+            android:id="@+id/mainButton"
             android:text="Los geht's"
             android:background="@color/orange"
             android:layout_gravity="bottom|center"

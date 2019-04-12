@@ -1471,17 +1471,14 @@ namespace WearExample1
 			// aapt resource value: 0x7f0d0051
 			public const int actions = 2131558481;
 			
-			// aapt resource value: 0x7f0d0036
-			public const int alertTitle = 2131558454;
+			// aapt resource value: 0x7f0d0039
+			public const int alertTitle = 2131558457;
 			
 			// aapt resource value: 0x7f0d000a
 			public const int all = 2131558410;
 			
-			// aapt resource value: 0x7f0d0035
-			public const int animatedWrapperContainer = 2131558453;
-			
-			// aapt resource value: 0x7f0d0032
-			public const int antwortTxt = 2131558450;
+			// aapt resource value: 0x7f0d0038
+			public const int animatedWrapperContainer = 2131558456;
 			
 			// aapt resource value: 0x7f0d0026
 			public const int async = 2131558438;
@@ -1491,9 +1488,6 @@ namespace WearExample1
 			
 			// aapt resource value: 0x7f0d000b
 			public const int bottom = 2131558411;
-			
-			// aapt resource value: 0x7f0d0033
-			public const int btnLosGehts = 2131558451;
 			
 			// aapt resource value: 0x7f0d000f
 			public const int butt = 2131558415;
@@ -1522,17 +1516,17 @@ namespace WearExample1
 			// aapt resource value: 0x7f0d001c
 			public const int clip_vertical = 2131558428;
 			
-			// aapt resource value: 0x7f0d0037
-			public const int configView = 2131558455;
+			// aapt resource value: 0x7f0d003a
+			public const int configView = 2131558458;
 			
 			// aapt resource value: 0x7f0d0017
 			public const int dashed = 2131558423;
 			
-			// aapt resource value: 0x7f0d0039
-			public const int dismiss_overlay_button = 2131558457;
+			// aapt resource value: 0x7f0d003c
+			public const int dismiss_overlay_button = 2131558460;
 			
-			// aapt resource value: 0x7f0d0038
-			public const int dismiss_overlay_explain = 2131558456;
+			// aapt resource value: 0x7f0d003b
+			public const int dismiss_overlay_explain = 2131558459;
 			
 			// aapt resource value: 0x7f0d001d
 			public const int end = 2131558429;
@@ -1555,9 +1549,6 @@ namespace WearExample1
 			// aapt resource value: 0x7f0d0028
 			public const int forever = 2131558440;
 			
-			// aapt resource value: 0x7f0d003a
-			public const int frageTxt = 2131558458;
-			
 			// aapt resource value: 0x7f0d0012
 			public const int height = 2131558418;
 			
@@ -1576,9 +1567,6 @@ namespace WearExample1
 			// aapt resource value: 0x7f0d0003
 			public const int item_touch_helper_previous_elevation = 2131558403;
 			
-			// aapt resource value: 0x7f0d003b
-			public const int jaBtn = 2131558459;
-			
 			// aapt resource value: 0x7f0d000c
 			public const int left = 2131558412;
 			
@@ -1588,6 +1576,12 @@ namespace WearExample1
 			// aapt resource value: 0x7f0d0005
 			public const int line3 = 2131558405;
 			
+			// aapt resource value: 0x7f0d0033
+			public const int mainButton = 2131558451;
+			
+			// aapt resource value: 0x7f0d0032
+			public const int mainText = 2131558450;
+			
 			// aapt resource value: 0x7f0d0046
 			public const int media_actions = 2131558470;
 			
@@ -1596,9 +1590,6 @@ namespace WearExample1
 			
 			// aapt resource value: 0x7f0d0022
 			public const int multi_page = 2131558434;
-			
-			// aapt resource value: 0x7f0d003c
-			public const int neinBtn = 2131558460;
 			
 			// aapt resource value: 0x7f0d0072
 			public const int nested_icon = 2131558514;
@@ -1624,8 +1615,17 @@ namespace WearExample1
 			// aapt resource value: 0x7f0d0074
 			public const int on = 2131558516;
 			
+			// aapt resource value: 0x7f0d0037
+			public const int parentPanel = 2131558455;
+			
+			// aapt resource value: 0x7f0d0036
+			public const int queryNoButton = 2131558454;
+			
 			// aapt resource value: 0x7f0d0034
-			public const int parentPanel = 2131558452;
+			public const int queryText = 2131558452;
+			
+			// aapt resource value: 0x7f0d0035
+			public const int queryYesButton = 2131558453;
 			
 			// aapt resource value: 0x7f0d000d
 			public const int right = 2131558413;
@@ -1901,16 +1901,16 @@ namespace WearExample1
 			public const int activity_main = 2130968580;
 			
 			// aapt resource value: 0x7f040005
-			public const int alert_dialog_wearable = 2130968581;
+			public const int activity_query = 2130968581;
 			
 			// aapt resource value: 0x7f040006
-			public const int decomposition_config_activity = 2130968582;
+			public const int alert_dialog_wearable = 2130968582;
 			
 			// aapt resource value: 0x7f040007
-			public const int dismiss_overlay = 2130968583;
+			public const int decomposition_config_activity = 2130968583;
 			
 			// aapt resource value: 0x7f040008
-			public const int janein = 2130968584;
+			public const int dismiss_overlay = 2130968584;
 			
 			// aapt resource value: 0x7f040009
 			public const int navigation_drawer_item_view = 2130968585;
