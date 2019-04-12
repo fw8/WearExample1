@@ -56,8 +56,7 @@ namespace WearExample1
 
         void StartClicked(object sender, EventArgs e)
         {
-            SetContentViewToQuery();
-            FindViewById<TextView>(Resource.Id.queryText).Text = book.GetCurrentPage().text;
+            ShowPage(book.GetCurrentPage());
         }
 
         void YesClicked(object sender, EventArgs e)
